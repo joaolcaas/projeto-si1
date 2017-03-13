@@ -1,6 +1,7 @@
 package br.edu.ufcg.computacao.si1.controller;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.AnuncioFactory;
 import br.edu.ufcg.computacao.si1.model.form.AnuncioForm;
 import br.edu.ufcg.computacao.si1.service.AnuncioServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,9 @@ public class CompanyAnuncioController {
 
     @Autowired
     private AnuncioServiceImpl anuncioService;
+
+
+    private AnuncioFactory anuncioFactory;
 
     @RequestMapping(value = "/company/cadastrar/anuncio", method = RequestMethod.GET)
     public ModelAndView getPageCadastarAnuncio(AnuncioForm anuncioForm){
@@ -46,10 +50,7 @@ public class CompanyAnuncioController {
             return getPageCadastarAnuncio(anuncioForm);
         }
 
-        Anuncio anuncio = new Anuncio();
-        anuncio.setTitulo(anuncioForm.getTitulo());
-        anuncio.setPreco(anuncioForm.getPreco());
-        anuncio.setTipo(anuncioForm.getTipo());
+        Anuncio anuncio = anuncioFactory.create(anuncioForm);
 
         anuncioService.create(anuncio);
 

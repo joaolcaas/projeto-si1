@@ -1,6 +1,9 @@
 package br.edu.ufcg.computacao.si1.service;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Emprego;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Imovel;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Movel;
 import br.edu.ufcg.computacao.si1.model.Notas;
 import br.edu.ufcg.computacao.si1.repository.AnuncioRepository;
 import org.junit.After;
@@ -33,9 +36,9 @@ public class AnuncioServiceTest {
 
     @Before
     public void setUp() {
-        anuncio1 = new Anuncio("Anuncio de Movel", new Date(), 100, Notas.notas[2], "movel");
-        anuncio2 = new Anuncio("Anuncio de Imovel", new Date(), 100000, Notas.notas[3], "imovel");
-        anuncio3 = new Anuncio("Anuncio de Emprego", new Date(), 0, Notas.notas[1], "emprego");
+        anuncio1 = new Movel("Anuncio de Movel", new Date(), 100, Notas.notas[2], "movel");
+        anuncio2 = new Imovel("Anuncio de Imovel", new Date(), 100000, Notas.notas[3], "imovel");
+        anuncio3 = new Emprego("Anuncio de Emprego", new Date(), 0, Notas.notas[1], "emprego");
     }
 
     @After
