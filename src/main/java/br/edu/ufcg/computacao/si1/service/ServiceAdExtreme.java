@@ -26,7 +26,7 @@ public class ServiceAdExtreme {
         }
     }
 
-    public void realizaCredito(Usuario usuario,Long valor){
+    public void realizaCredito(Usuario usuario, Long valor){
         if(usuarioService.getById(usuario.getId()) != null){
             usuario.setSaldo(usuario.getSaldo() + valor);
             usuarioService.update(usuario);

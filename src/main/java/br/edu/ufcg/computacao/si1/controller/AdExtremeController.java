@@ -16,6 +16,7 @@ public class AdExtremeController {
     @Autowired
     private ServiceAdExtreme serviceAdExtreme;
 
+    //aqui iremos mexer com a venda e com os usuarios
     @RequestMapping(value = "/AdExtreme",method = RequestMethod.PUT)
     public ModelAndView fazerVenda(){
         ModelAndView model = new ModelAndView();
