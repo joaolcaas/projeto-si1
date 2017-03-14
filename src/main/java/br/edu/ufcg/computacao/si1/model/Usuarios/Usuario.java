@@ -1,5 +1,6 @@
 package br.edu.ufcg.computacao.si1.model.Usuarios;
 
+import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
 
 @Entity(name = "Usuario")
 @Table(name = "tb_usuario")
@@ -15,9 +17,10 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "USUARIO_ID")
     private Long id;
 
-    @Column
+    @Column(nullable = false)
     private String nome;
 
     @Column(unique = true)
@@ -32,11 +35,14 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
     @Column
     private Long saldo;
 
+    @OneToMany
+    private List<Anuncio> anuncios;
+
     public Usuario() {
         super("default", "default", AuthorityUtils.createAuthorityList("USER"));
     }
 
-    public Usuario(String nome, String email, String senha, String role,Long saldo) {
+    public Usuario(String nome, String email, String senha, String role,Long saldo, List<Anuncio> anuncios) {
 
         super(email, senha, AuthorityUtils.createAuthorityList(role));
 
@@ -45,6 +51,15 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
         this.senha = senha;
         this.role = role;
         this.saldo = saldo;
+        this.anuncios = anuncios;
+    }
+
+    public List<Anuncio> getAnuncios() {
+        return anuncios;
+    }
+
+    public void setAnuncios(List<Anuncio> anuncios) {
+        this.anuncios = anuncios;
     }
 
     public Long getId() {

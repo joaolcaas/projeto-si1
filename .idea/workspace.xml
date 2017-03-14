@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a45797a-533c-4eca-89cc-ef62fd2898a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AdExtremeController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AdExtremeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,65 +22,35 @@
       <file leaf-file-name="AnuncioController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AnuncioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="85">
               <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceAdExtreme.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.java">
+      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="-17">
+              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+                <element signature="e#1490#1491#0" expanded="true" />
+                <element signature="e#1545#1546#0" expanded="true" />
+                <element signature="e#1585#1586#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnuncioServiceTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java">
+      <file leaf-file-name="Anuncio.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2046">
-              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+            <state relative-caret-position="289">
+              <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Imovel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnuncioServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdExtremeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AdExtremeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,8 +107,6 @@
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/UsuarioServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/form/UsuarioForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Movel.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Emprego.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AnuncioController.java" />
@@ -151,6 +116,8 @@
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java" />
       </list>
     </option>
   </component>
@@ -869,7 +836,7 @@
       <workItem from="1489255365306" duration="1840000" />
       <workItem from="1489404784863" duration="5137000" />
       <workItem from="1489426752794" duration="4315000" />
-      <workItem from="1489522975348" duration="922000" />
+      <workItem from="1489522975348" duration="2331000" />
     </task>
     <servers />
   </component>
@@ -888,7 +855,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35425000" />
+    <option name="totallyTimeSpent" value="36834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -900,7 +867,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1095,6 +1062,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,25 +1121,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="30" column="118" lean-forward="false" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1949#1950#0" expanded="false" />
-            <element signature="e#1999#2000#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,6 +1144,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,16 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/AnuncioFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -1255,14 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
           <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AnuncioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1293,6 +1226,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="181" column="63" lean-forward="false" selection-start-line="181" selection-start-column="63" selection-end-line="181" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1303,10 +1244,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2046">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="130">
+          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AnuncioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding />
         </state>
       </provider>

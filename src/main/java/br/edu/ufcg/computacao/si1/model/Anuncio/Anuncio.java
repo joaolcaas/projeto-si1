@@ -1,5 +1,7 @@
 package br.edu.ufcg.computacao.si1.model.Anuncio;
 
+import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+
 import javax.persistence.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -37,12 +39,17 @@ public abstract class Anuncio {
     @Column(name = "tipo", nullable = false)
     private String tipo;
 
-    public Anuncio(String titulo, Date dataDeCriacao, double preco, String nota, String tipo) {
+    @OneToMany
+    @JoinColumn(name = "USUARIO_ID")
+    private Usuario usuario;
+
+    public Anuncio(String titulo, Date dataDeCriacao, double preco, String nota, String tipo,Usuario usuario) {
         this.titulo = titulo;
         this.dataDeCriacao = dataDeCriacao;
         this.preco = preco;
         this.nota = nota;
         this.tipo = tipo;
+        this.usuario = usuario;
     }
 
     public Anuncio() {
@@ -107,6 +114,12 @@ public abstract class Anuncio {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+
 
     @Override
     public boolean equals(Object o) {
