@@ -1,5 +1,6 @@
 package br.edu.ufcg.computacao.si1.model.Anuncio;
 
+import br.edu.ufcg.computacao.si1.model.ENotas;
 import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
 
 import javax.persistence.*;
@@ -21,7 +22,7 @@ public abstract class Anuncio {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name = "_id", nullable = false, unique = true)
+    @Column(name = "ANUNCIO_ID", nullable = false, unique = true)
     private Long _id;
 
     @Column(name = "titulo", nullable = false)
@@ -39,17 +40,22 @@ public abstract class Anuncio {
     @Column(name = "tipo", nullable = false)
     private String tipo;
 
-    @OneToMany
+   /* @OneToMany
     @JoinColumn(name = "USUARIO_ID")
     private Usuario usuario;
+    */
 
-    public Anuncio(String titulo, Date dataDeCriacao, double preco, String nota, String tipo,Usuario usuario) {
+   /*@Enumerated(EnumType.STRING)
+   @Column(name = "enotas", nullable = false) necessario para criar um anuncio com uma nota(enum)
+   private ENotas enotas;
+    */
+
+    public Anuncio(String titulo, Date dataDeCriacao, double preco, String nota, String tipo) {
         this.titulo = titulo;
         this.dataDeCriacao = dataDeCriacao;
         this.preco = preco;
         this.nota = nota;
         this.tipo = tipo;
-        this.usuario = usuario;
     }
 
     public Anuncio() {
@@ -115,9 +121,6 @@ public abstract class Anuncio {
         this.tipo = tipo;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
 
 
 

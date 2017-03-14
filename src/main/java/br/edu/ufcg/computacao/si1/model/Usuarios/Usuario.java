@@ -35,14 +35,14 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
     @Column
     private Long saldo;
 
-    @OneToMany
-    private List<Anuncio> anuncios;
-
+   /* @OneToMany
+    private List<Anuncio> anuncios; cada usuario vai ter uma lista dos seus anuncios
+    */
     public Usuario() {
         super("default", "default", AuthorityUtils.createAuthorityList("USER"));
     }
 
-    public Usuario(String nome, String email, String senha, String role,Long saldo, List<Anuncio> anuncios) {
+    public Usuario(String nome, String email, String senha, String role,Long saldo) {
 
         super(email, senha, AuthorityUtils.createAuthorityList(role));
 
@@ -51,16 +51,8 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
         this.senha = senha;
         this.role = role;
         this.saldo = saldo;
-        this.anuncios = anuncios;
     }
 
-    public List<Anuncio> getAnuncios() {
-        return anuncios;
-    }
-
-    public void setAnuncios(List<Anuncio> anuncios) {
-        this.anuncios = anuncios;
-    }
 
     public Long getId() {
         return id;
