@@ -24,6 +24,9 @@ public class AnuncioFactory {
             case "emprego":
                 anuncio = new Emprego();
                 break;
+            case "servico":
+                anuncio = new Servico();
+                break;
         }
 
         setUp(anuncioForm, anuncio);
