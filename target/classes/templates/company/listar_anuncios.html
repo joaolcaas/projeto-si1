@@ -13,23 +13,64 @@
         <div th:if="${anuncios.isEmpty()}">
             <h4>Nenhum Anúncio listado</h4>
         </div>
+        <th>
+            <h1 th:align="center" th:text="${'Seu saldo: ' + usuarioCompany.saldo + ' '}"></h1>
+            <h1 th:align="center" th:text="${'Seu gasto:' + usuarioCompany.gasto + ' '}"></h1>
+        </th>
         <div th:if="${anuncios != null}" class="table-responsive">
             <table style="width:100%" class="table table-bordered">
                 <tr>
                     <th>Titulo</th>
                     <th>Tipo</th>
                     <th>Postado</th>
-                    <th align="right">Preço</th>
+                    <th>Nota</th>
+                    <th th:align="center">Preço</th>
+                    <th>Compra</th>
                 </tr>
 
-                <th:block th:each="item : ${anuncios}">
+              <!--  <th:block th:each="item : ${anuncios}">
                     <tr>
                         <td th:text="${item.titulo}"></td>
                         <td th:text="${#strings.toUpperCase(item.tipo)}"> - </td>
                         <td th:text="${item.dataDeCriacao}"> - </td>
+
                         <td align="center" th:text="${'R$ ' + #numbers.formatDecimal(item.preco, 0, 'COMMA', 2, 'POINT')}">0.00</td>
                     </tr>
-                </th:block>
+                   </th:block>-->
+
+                <div th:if="usuarioCompany.id != item.criador.id">
+                    <th:block th:each="item:${anuncios}">
+                        <tr>
+                            <!--  <td th:text="${item._id}">ID do Anuncio</td> -->
+                            <td th:text="${item.titulo}"> - </td>
+                            <td th:text="${#strings.toUpperCase(item.tipo)}"> - </td>
+                            <td th:text="${item.dataDeCriacao}"> - </td>
+                            <td th:text="${item.criador}"></td>
+                            <td>
+                                <div class="collapse navbar-collapse navbar-menubuilder">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                               aria-expanded="true" th:text="${item.nota}"> - <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <body>
+                                                <p th:each="estrela:${notas}" th:text="${estrela}"> - </p>
+                                                </body>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td align="center" th:text="${'R$ ' + #numbers.formatDecimal(item.preco, 0, 'COMMA', 2, 'POINT')}">0.00</td>
+                            <td>
+                                <form  th:action="@{comprar/anuncio}" method="post">
+                                    <input type="hidden" th:value="${item._id}" name="ANUNCIO_ID"/>
+                                    <button  class="btn btn-success"> Comprar</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </th:block>
+                </div>
             </table>
         </div>
     </div>

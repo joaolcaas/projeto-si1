@@ -11,7 +11,7 @@ public class PessoaFisica extends Usuario {
     public PessoaFisica() {
     }
 
-    public PessoaFisica(String nome, String email, String senha, Long saldo) {
-        super(nome, email, senha, "USER", saldo);
+    public PessoaFisica(String nome, String email, String senha, Double saldo, Double gasto) {
+        super(nome, email, senha, "USER", saldo,gasto);
     }
 }

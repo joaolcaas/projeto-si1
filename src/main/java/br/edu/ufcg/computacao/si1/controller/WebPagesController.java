@@ -29,6 +29,7 @@ public class WebPagesController {
         ModelAndView model = new ModelAndView();
         model.setViewName("user/index");
 
+
         return model;
     }
 
@@ -39,4 +40,5 @@ public class WebPagesController {
 
         return model;
     }
+
 }

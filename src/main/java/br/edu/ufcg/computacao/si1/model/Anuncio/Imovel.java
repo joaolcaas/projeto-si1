@@ -1,5 +1,8 @@
 package br.edu.ufcg.computacao.si1.model.Anuncio;
 
+
+import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+
 import javax.persistence.Entity;
 import java.util.Date;
 
@@ -13,7 +16,7 @@ public class Imovel extends Anuncio{
         super();
     }
 
-    public Imovel(String titulo, Date dataDeCriacao, double preco, String nota, String tipo) {
-        super(titulo, dataDeCriacao, preco, nota, tipo);
+    public Imovel(String titulo, Date dataDeCriacao, Double preco, String nota, String tipo, Usuario criador) {
+        super(titulo, dataDeCriacao, preco, nota, tipo, criador);
     }
 }

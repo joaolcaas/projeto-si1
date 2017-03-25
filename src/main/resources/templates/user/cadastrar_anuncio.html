@@ -30,6 +30,11 @@
                     <!-- Form Name -->
                     <legend>Cadastrar Anúncio</legend>
                     <!-- Text input-->
+                    <div>
+                        <th>
+                            <h1 th:align="center" th:text="${'Cadastre Seu Anuncio, ' + usuarioUser.nome + ' '}"></h1>
+                        </th>
+                    </div>
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="titulo">Titulo</label>
                         <div class="col-md-4">
@@ -47,13 +52,14 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Tipo</label>
                         <div class="col-md-4">
-                            <div class="radio" th:if="${anuncioForm.tipos != null}">
+                            <div class="radio" th:if="${anuncioForm.tiposUser != null}">
                                 <th:block th:object="${anuncioForm}">
-                                    <label for="radios-0" th:each="tipo : *{tipos}">
+                                    <label for="radios-0" th:each="tipo : *{tiposUser}">
                                         <input type="radio" name="tipo" id="radios-0" th:value="${tipo}"/>
                                         <p th:text="${tipo}"></p>
                                     </label>
                                 </th:block>
+
                             </div>
                         </div>
                     </div>

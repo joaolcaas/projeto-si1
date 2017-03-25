@@ -8,28 +8,73 @@
 </head>
 <th:block layout:fragment="conteudo">
     <div class="col-md-offset-2 col-md-8">
-        <h1>Anúncios</h1>
+        <h1 th:align="center">Anúncios</h1>
         <!-- Text input-->
         <div th:if="${anuncios.isEmpty()}">
             <h4>Nenhum Anúncio listado</h4>
         </div>
+        <div>
+            <th>
+                <h1 th:align="center" th:text="${'Seu saldo: ' + usuarioUser.saldo + ' '}"></h1>
+                <h1 th:align="center" th:text="${'Seu gasto:' + usuarioUser.gasto + ' '}"></h1>
+            </th>
+
+        </div>
+        <div th:each="anuncioUsuario:${anunciosUser}">
+            <td th:text="${anuncioUsuario.titulo}"></td>
+            <td th:text="${anuncioUsuario.dataDeCriacao}"></td>
+        </div>
         <div th:if="${anuncios != null}" class="table-responsive">
             <table style="width:100%" class="table table-bordered">
                 <tr>
+                    <!--<th>ID</th> -->
                     <th>Titulo</th>
+                  <!--  <th>Id Criador</th> -->
                     <th>Tipo</th>
                     <th>Postado</th>
+                    <th>Nota</th>
                     <th align="right">Preço</th>
+                    <th>Compre Aqui</th>
                 </tr>
-
-                <th:block th:each="item : ${anuncios}">
+                <div>
+                <th:block th:each="item:${anuncios}">
                     <tr>
-                        <td th:text="${item.titulo}"></td>
+                      <!--  <td th:text="${item._id}">ID do Anuncio</td> -->
+                        <td th:text="${item.titulo}"> - </td>
+                       <!-- <td th:text="${item.criador.id}"></td> -->
                         <td th:text="${#strings.toUpperCase(item.tipo)}"> - </td>
                         <td th:text="${item.dataDeCriacao}"> - </td>
+                        <td>
+                            <div class="collapse navbar-collapse navbar-menubuilder">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="true" th:text="${item.nota}"> - <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <form th:action="@{avaliar/anuncio}" method="post">
+                                            <form type="hidden" th:value="${item._id}" name = "ANUNCIO_ID">
+                                                 <p th:each="estrela:${notas}" th:text="${estrela}"/>
+                                            </form>
+                                        </form>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </div>
+                        </td>
                         <td align="center" th:text="${'R$ ' + #numbers.formatDecimal(item.preco, 0, 'COMMA', 2, 'POINT')}">0.00</td>
+                        <td>
+                            <div th:if="${usuarioUser.id} != ${item.criador.id}">
+                                <div th:if="${item.tipo} == movel or ${item.tipo} == imovel">
+                                    <form  th:action="@{comprar/anuncio}" method="post">
+                                    <input type="hidden" th:value="${item._id}" name="ANUNCIO_ID"/>
+                                    <button  class="btn btn-success"> Comprar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                 </th:block>
+                </div>
             </table>
         </div>
     </div>

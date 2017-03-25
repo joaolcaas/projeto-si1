@@ -12,7 +12,7 @@ public class PessoaJuridica extends Usuario {
     public PessoaJuridica() {
     }
 
-    public PessoaJuridica(String nome, String email, String senha, Long saldo) {
-        super(nome, email, senha, "COMPANY", saldo);
+    public PessoaJuridica(String nome, String email, String senha, Double saldo, Double gasto) {
+        super(nome, email, senha, "COMPANY", saldo,gasto);
     }
 }

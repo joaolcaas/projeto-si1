@@ -1,5 +1,6 @@
 package br.edu.ufcg.computacao.si1.service;
 
+import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
 import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaFisica;
 import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaJuridica;
 import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
@@ -7,6 +8,9 @@ import br.edu.ufcg.computacao.si1.model.Usuarios.UsuarioFactory;
 import br.edu.ufcg.computacao.si1.model.form.UsuarioForm;
 import br.edu.ufcg.computacao.si1.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -17,7 +21,7 @@ public class UsuarioServiceImpl implements UsuarioService{
 
     private UsuarioRepository usuarioRepository;
     private UsuarioFactory usuarioFactory;
-
+    private Anuncio anuncio;
     @Autowired
     public void setUsuarioRepository(UsuarioRepository usuarioRepository) {
         this.usuarioRepository = usuarioRepository;
@@ -35,9 +39,8 @@ public class UsuarioServiceImpl implements UsuarioService{
     }
 
     @Override
-    public Optional<Usuario> getById(Long id) {
-
-        return Optional.ofNullable(usuarioRepository.findOne(id));
+    public Usuario getById(Long id) {
+        return usuarioRepository.getOne(id);
     }
 
     @Override
@@ -56,10 +59,14 @@ public class UsuarioServiceImpl implements UsuarioService{
     public boolean update(Usuario usuario) {
         System.out.println(usuario + "estah sendo atualizado");
 
+
+
         if (usuarioRepository.exists(usuario.getId())) {
             usuarioRepository.save(usuario);
             return true;
         }
+
+
         return false;
     }
 
@@ -70,5 +77,20 @@ public class UsuarioServiceImpl implements UsuarioService{
             return true;
         }
         return false;
+    }
+    @Override
+    //um modo de pegar os dados do usuario logado
+    public Usuario getUsuarioLogado(){
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+        String emailUsuario = auth.getName();
+
+        if(getByEmail(emailUsuario).isPresent()){
+            return this.getByEmail(emailUsuario).get();
+        }
+        else{
+            throw new AuthenticationCredentialsNotFoundException("Usuario não logado");
+        }
+
     }
 }
