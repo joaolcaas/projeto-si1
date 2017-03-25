@@ -4,6 +4,7 @@ import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
 import br.edu.ufcg.computacao.si1.model.Anuncio.AnuncioFactory;
 import br.edu.ufcg.computacao.si1.model.form.AnuncioForm;
 import br.edu.ufcg.computacao.si1.service.AnuncioServiceImpl;
+import br.edu.ufcg.computacao.si1.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -20,14 +21,18 @@ public class CompanyAnuncioController {
     @Autowired
     private AnuncioServiceImpl anuncioService;
 
-
+    @Autowired
     private AnuncioFactory anuncioFactory;
+
+    @Autowired
+    private UsuarioService usuarioService;
 
     @RequestMapping(value = "/company/cadastrar/anuncio", method = RequestMethod.GET)
     public ModelAndView getPageCadastarAnuncio(AnuncioForm anuncioForm){
         ModelAndView model = new ModelAndView();
 
-        model.addObject("tipos", anuncioForm.getTipos());
+        model.addObject("usuarioCompany",usuarioService.getUsuarioLogado());
+        model.addObject("tiposCompany", anuncioForm.getTipos());
         model.setViewName("company/cadastrar_anuncio");
 
         return model;
@@ -38,7 +43,7 @@ public class CompanyAnuncioController {
         ModelAndView model = new ModelAndView();
 
         model.addObject("anuncios", anuncioService.getAnuncioRepository().findAll());
-
+        model.addObject("usuarioCompany",usuarioService.getUsuarioLogado());
         model.setViewName("company/listar_anuncios");
 
         return model;
@@ -50,7 +55,7 @@ public class CompanyAnuncioController {
             return getPageCadastarAnuncio(anuncioForm);
         }
 
-        Anuncio anuncio = anuncioFactory.create(anuncioForm);
+        Anuncio anuncio = anuncioFactory.create(anuncioForm,usuarioService.getUsuarioLogado());
 
         anuncioService.create(anuncio);
 
