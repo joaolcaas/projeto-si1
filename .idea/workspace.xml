@@ -2,71 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a45797a-533c-4eca-89cc-ef62fd2898a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AdExtremeController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/AnuncioController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/ENotas.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/AdExtremeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/AnuncioController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/ServiceAdExtreme.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projeto-si1" afterPath="$PROJECT_DIR$/projeto-si1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/CadastroController.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/CadastroController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/WebPagesController.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/WebPagesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/AnuncioFactory.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/AnuncioFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Emprego.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Emprego.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Movel.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Anuncio/Movel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaFisica.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaFisica.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaJuridica.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaJuridica.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/UsuarioFactory.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/Usuarios/UsuarioFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/form/AnuncioForm.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/form/AnuncioForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/form/UsuarioForm.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/model/form/UsuarioForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/AnuncioService.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/AnuncioService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/AnuncioServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/AnuncioServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/UsuarioService.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/UsuarioService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/UsuarioServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/service/UsuarioServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CadastroController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CadastroController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/WebPagesController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/WebPagesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/AnuncioFactory.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/AnuncioFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Emprego.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Emprego.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Imovel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Movel.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Movel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Servico.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Servico.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Notas.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Notas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaFisica.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaFisica.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaJuridica.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/PessoaJuridica.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/Usuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/UsuarioFactory.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Usuarios/UsuarioFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/form/AnuncioForm.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/form/AnuncioForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/form/UsuarioForm.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/form/UsuarioForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioService.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/UsuarioService.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/UsuarioService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/UsuarioServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/UsuarioServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/company/cadastrar_anuncio.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/company/cadastrar_anuncio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/company/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/company/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/layout_company.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/layout_company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/layout_user.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/layout_user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/cadastrar_anuncio.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/cadastrar_anuncio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/company/cadastrar_anuncio.html" afterPath="$PROJECT_DIR$/target/classes/templates/company/cadastrar_anuncio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/company/index.html" afterPath="$PROJECT_DIR$/target/classes/templates/company/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/company/listar_anuncios.html" afterPath="$PROJECT_DIR$/target/classes/templates/company/listar_anuncios.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/layout/layout_company.html" afterPath="$PROJECT_DIR$/target/classes/templates/layout/layout_company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/layout/layout_user.html" afterPath="$PROJECT_DIR$/target/classes/templates/layout/layout_user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/user/cadastrar_anuncio.html" afterPath="$PROJECT_DIR$/target/classes/templates/user/cadastrar_anuncio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/user/index.html" afterPath="$PROJECT_DIR$/target/classes/templates/user/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/user/listar_anuncios.html" afterPath="$PROJECT_DIR$/target/classes/templates/user/listar_anuncios.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,32 +22,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserAnuncioController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserAnuncioController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="87" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnuncioService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioService.java">
+      <file leaf-file-name="listar_anuncios.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="188">
+              <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#2;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="listar_anuncios.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="273">
+              <caret line="40" column="66" lean-forward="false" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#3;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +61,8 @@
       <file leaf-file-name="CompanyAnuncioController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="582">
+              <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -200,16 +146,16 @@
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Anuncio.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Servico.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/Movel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/Anuncio/AnuncioFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/form/UsuarioForm.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/UsuarioServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html" />
       </list>
     </option>
@@ -348,27 +294,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="br" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="edu" />
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad-extreme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad-extreme-master" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ufcg" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="computacao" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="si1" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,10 +375,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="si1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,9 +426,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -940,7 +900,8 @@
       <workItem from="1490362100896" duration="3446000" />
       <workItem from="1490368686213" duration="15914000" />
       <workItem from="1490389812080" duration="4884000" />
-      <workItem from="1490406287022" duration="5733000" />
+      <workItem from="1490406287022" duration="6163000" />
+      <workItem from="1490462005466" duration="4476000" />
     </task>
     <task id="LOCAL-00001" summary="Juntando o front-end com funções do back e terminando as user-stories-Sexta a tarde e a noite João , Adauto e Pedro">
       <created>1490411277294</created>
@@ -949,7 +910,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490411277294</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Juntando o front-end com funções do back e terminando as user-stories-Sexta a tarde e a noite João , Adauto e Pedro">
+      <created>1490412196222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490412196222</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -973,7 +941,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101823000" />
+    <option name="totallyTimeSpent" value="106729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,10 +975,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2700491" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2700491" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.49394855" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28755692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29210925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1024,6 +992,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1122,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="24" column="63" lean-forward="false" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,7 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="42" column="132" lean-forward="true" selection-start-line="42" selection-start-column="132" selection-end-line="42" selection-end-column="132" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="70" column="36" lean-forward="true" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1221,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,14 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1252,7 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,7 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1306,7 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,7 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="71" lean-forward="false" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,10 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#168#169#0" expanded="false" />
-            <element signature="e#191#192#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1333,7 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="32" column="110" lean-forward="true" selection-start-line="32" selection-start-column="110" selection-end-line="32" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1357,15 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1373,23 +1326,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="87" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="582">
+          <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="273">
+          <caret line="40" column="66" lean-forward="false" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#3;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#2;n#div#0;n#th:block#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

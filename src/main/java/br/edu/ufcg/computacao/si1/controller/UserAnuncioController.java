@@ -55,6 +55,7 @@ public class UserAnuncioController {
         model.addObject("usuarioUser",usuarioService.getUsuarioLogado());
         model.addObject("anuncios", anuncioRep.findAll());
         model.addObject("anunciosUser",anuncioService.getByIdCriador(usuarioService.getUsuarioLogado().getId()));
+
         model.setViewName("user/listar_anuncios");
 
         return model;
