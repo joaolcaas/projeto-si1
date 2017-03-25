@@ -10,14 +10,49 @@
     <div class="col-md-offset-2 col-md-8">
         <h1>Anúncios</h1>
         <!-- Text input-->
-        <div th:if="${anuncios.isEmpty()}">
-            <h4>Nenhum Anúncio listado</h4>
-        </div>
+
         <th>
             <h1 th:align="center" th:text="${'Seu saldo: ' + usuarioCompany.saldo + ' '}"></h1>
             <h1 th:align="center" th:text="${'Seu gasto:' + usuarioCompany.gasto + ' '}"></h1>
         </th>
+
+        <div th:if="${anunciosCompany.isEmpty()}">
+            <h4>Voce não tem nenhum anuncio a ser listado</h4>
+        </div>
+
+
+        <div th:if="${anunciosCompany} != null">
+            <h4 th:align="center">Seus anuncios</h4>
+            <div class="table-responsive">
+                <table style="width:100%" class="table table-bordered">
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Tipo</th>
+                        <th>Postado</th>
+                        <th>Nota</th>
+                        <th align="right">Preço</th>
+                    </tr>
+                    <div>
+                        <th:block th:each="anuncioCompany:${anunciosCompany}">
+                            <tr>
+                                <td th:text="${anuncioCompany.titulo}"> - </td>
+                                <td th:text="${#strings.toUpperCase(anuncioCompany.tipo)}"> - </td>
+                                <td th:text="${anuncioCompany.dataDeCriacao}"> - </td>
+                                <td th:text="${anuncioCompany.nota}"></td>
+                                <td align="center" th:text="${'R$ ' + #numbers.formatDecimal(anuncioCompany.preco, 0, 'COMMA', 2, 'POINT')}">0.00</td>
+                            </tr>
+                        </th:block>
+                    </div>
+                </table>
+            </div>
+
+        </div>
+
+        <div th:if="${anuncios.isEmpty()}">
+            <h4>Nenhum Anúncio listado</h4>
+        </div>
         <div th:if="${anuncios != null}" class="table-responsive">
+            <h4 th:align="center">Todos os anuncios</h4>
             <table style="width:100%" class="table table-bordered">
                 <tr>
                     <th>Titulo</th>
@@ -27,25 +62,12 @@
                     <th th:align="center">Preço</th>
                     <th>Compra</th>
                 </tr>
-
-              <!--  <th:block th:each="item : ${anuncios}">
-                    <tr>
-                        <td th:text="${item.titulo}"></td>
-                        <td th:text="${#strings.toUpperCase(item.tipo)}"> - </td>
-                        <td th:text="${item.dataDeCriacao}"> - </td>
-
-                        <td align="center" th:text="${'R$ ' + #numbers.formatDecimal(item.preco, 0, 'COMMA', 2, 'POINT')}">0.00</td>
-                    </tr>
-                   </th:block>-->
-
-                <div th:if="usuarioCompany.id != item.criador.id">
                     <th:block th:each="item:${anuncios}">
                         <tr>
                             <!--  <td th:text="${item._id}">ID do Anuncio</td> -->
                             <td th:text="${item.titulo}"> - </td>
                             <td th:text="${#strings.toUpperCase(item.tipo)}"> - </td>
                             <td th:text="${item.dataDeCriacao}"> - </td>
-                            <td th:text="${item.criador}"></td>
                             <td>
                                 <div class="collapse navbar-collapse navbar-menubuilder">
                                     <ul class="nav navbar-nav navbar-left">
@@ -53,9 +75,11 @@
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                                aria-expanded="true" th:text="${item.nota}"> - <span class="caret"></span></a>
                                             <ul class="dropdown-menu">
-                                                <body>
-                                                <p th:each="estrela:${notas}" th:text="${estrela}"> - </p>
-                                                </body>
+                                                <form th:action="@{avaliar/anuncio}" method="post">
+                                                    <form type="hidden" th:value="${item._id}" name = "ANUNCIO_ID">
+                                                        <p th:each="estrela:${notas}" th:text="${estrela}"/>
+                                                    </form>
+                                                </form>
                                             </ul>
                                         </li>
                                     </ul>
@@ -63,14 +87,17 @@
                             </td>
                             <td align="center" th:text="${'R$ ' + #numbers.formatDecimal(item.preco, 0, 'COMMA', 2, 'POINT')}">0.00</td>
                             <td>
-                                <form  th:action="@{comprar/anuncio}" method="post">
-                                    <input type="hidden" th:value="${item._id}" name="ANUNCIO_ID"/>
-                                    <button  class="btn btn-success"> Comprar</button>
-                                </form>
+                                <div th:if="${usuarioCompany.id} != ${item.criador.id}">
+                                    <div th:if="${item.tipo} == movel or ${item.tipo} == imovel">
+                                        <form  th:action="@{comprar/anuncio}" method="post">
+                                            <input type="hidden" th:value="${item._id}" name="ANUNCIO_ID"/>
+                                            <button  class="btn btn-success"> Comprar</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </th:block>
-                </div>
             </table>
         </div>
     </div>

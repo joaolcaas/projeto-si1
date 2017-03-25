@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a45797a-533c-4eca-89cc-ef62fd2898a4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.class" afterPath="$PROJECT_DIR$/target/classes/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/CompanyAnuncioController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/controller/UserAnuncioController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/company/listar_anuncios.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/listar_anuncios.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/company/listar_anuncios.html" afterPath="$PROJECT_DIR$/target/classes/templates/company/listar_anuncios.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/user/listar_anuncios.html" afterPath="$PROJECT_DIR$/target/classes/templates/user/listar_anuncios.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -901,7 +900,7 @@
       <workItem from="1490368686213" duration="15914000" />
       <workItem from="1490389812080" duration="4884000" />
       <workItem from="1490406287022" duration="6163000" />
-      <workItem from="1490462005466" duration="4476000" />
+      <workItem from="1490462005466" duration="4549000" />
     </task>
     <task id="LOCAL-00001" summary="Juntando o front-end com funções do back e terminando as user-stories-Sexta a tarde e a noite João , Adauto e Pedro">
       <created>1490411277294</created>
@@ -917,7 +916,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490412196222</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mudando as paginas de company e adicionando a lista dos anuncios do usuario">
+      <created>1490466567984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490466567984</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -941,7 +947,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106729000" />
+    <option name="totallyTimeSpent" value="106802000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1016,7 +1022,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Juntando o front-end com funções do back e terminando as user-stories-Sexta a tarde e a noite João , Adauto e Pedro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Juntando o front-end com funções do back e terminando as user-stories-Sexta a tarde e a noite João , Adauto e Pedro" />
+    <MESSAGE value="Mudando as paginas de company e adicionando a lista dos anuncios do usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudando as paginas de company e adicionando a lista dos anuncios do usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
