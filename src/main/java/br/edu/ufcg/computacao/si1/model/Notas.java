@@ -7,6 +7,6 @@ public class Notas {
 
    //Constantes
    public static String[] notas = new String[] {
-           "", "★", "★★", "★★★", "★★★★", "★★★★★"
+           "NOSTAR","★", "★★", "★★★", "★★★★", "★★★★★"
    };
 }

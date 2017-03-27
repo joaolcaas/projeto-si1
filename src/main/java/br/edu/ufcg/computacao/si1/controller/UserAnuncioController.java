@@ -77,14 +77,14 @@ public class UserAnuncioController {
     }
 
     @RequestMapping(value ="user/listar/avaliar/anuncio",method = RequestMethod.POST)
-    public ModelAndView avaliarAnuncio(@RequestParam(value = "ANUNCIO_ID") long id, String nota){
+    public ModelAndView avaliarAnuncio(Anuncio anuncio, @RequestParam(value= "NOTA") String nota){
         ModelAndView model = new ModelAndView();
 
-        Anuncio anuncio = anuncioService.getById(id).get();
-
         anuncio.setNota(nota);
-        model.setViewName("user/listar/anuncio");
-        return model;
+
+        anuncioService.update(anuncio);
+
+        return new ModelAndView("redirect:/user/listar/anuncios");
     }
 
     @RequestMapping(value = "user/listar/comprar/anuncio",method = RequestMethod.POST)
@@ -97,20 +97,17 @@ public class UserAnuncioController {
 
         Usuario usuarioLogado = usuarioService.getUsuarioLogado();
 
-        //Criar método em usuario, debitar e creditar
+        anunciante.creditar(anuncio.getPreco());
+        usuarioLogado.debitar(anuncio.getPreco());
 
-        usuarioLogado.setSaldo(usuarioLogado.getSaldo() - anuncio.getPreco());
-        usuarioLogado.setGasto(usuarioLogado.getGasto() + anuncio.getPreco());
-
-        anunciante.setSaldo(anuncio.getPreco() + anunciante.getSaldo());
+        anunciante.addNotificacao("Seu produto: " + anuncio.getTitulo() + " foi vendido para " + usuarioLogado.getNome());
 
         anuncioService.delete(id);
         usuarioService.update(anunciante);
         usuarioService.update(usuarioLogado);
 
-        return new ModelAndView("redirect:/user/listar_anuncios");
+        return new ModelAndView("redirect:/user/listar/anuncios");
 
     }
-
 
 }

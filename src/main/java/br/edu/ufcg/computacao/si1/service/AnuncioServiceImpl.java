@@ -79,11 +79,11 @@ public class AnuncioServiceImpl implements AnuncioService {
     public boolean delete(Long id) {
         /*aqui se apaga o anuncio se ele existir*/
 
-
         if (anuncioRepository.exists(id)) {
             anuncioRepository.delete(id);
             return true;
         }
         return false;
     }
+
 }

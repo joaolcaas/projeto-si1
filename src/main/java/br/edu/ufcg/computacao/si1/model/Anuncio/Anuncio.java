@@ -57,7 +57,7 @@ public abstract class Anuncio {
         this.preco = preco;
         this.nota = "NOSTAR";
         this.tipo = tipo;
-        this.comentarios = new String[] {"s"};
+        this.comentarios = new String[] {""};
         this.criador = criador;
     }
 

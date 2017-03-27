@@ -9,5 +9,22 @@
 <th:block layout:fragment="conteudo">
     <h1 th:align="center"> Bem vindo</h1>
     <h1 th:align="center"> AD-EXTREME</h1>
+    <div th:if="${notificacoes.size() == 0}" >
+        <h3 th:align="center">Nenhuma notificação</h3>
+    </div>
+    <div align="center" th:if="${notificacoes.size() > 0}">
+        <h4 th:align="center">Suas notificações listadas</h4>
+        <div class="table-responsive">
+            <table style="width:100%" class="table table-bordered">
+                <div>
+                    <th:block th:each="notificacao:${notificacoes}">
+                        <tr>
+                            <td th:text="${notificacao}" th:align="center"> - </td>
+                        </tr>
+                    </th:block>
+                </div>
+            </table>
+        </div>
+    </div>
 </th:block>
 </html>

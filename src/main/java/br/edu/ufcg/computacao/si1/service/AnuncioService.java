@@ -24,4 +24,5 @@ public interface AnuncioService {
 
     Collection<Anuncio> getByIdCriador(Long id);
 
+
 }

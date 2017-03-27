@@ -44,5 +44,4 @@ public class AnuncioFactory {
         anuncio.setCriador(criador);
     }
 
-
 }

@@ -95,18 +95,27 @@ public class CompanyAnuncioController {
 
         Usuario usuarioLogado = usuarioService.getUsuarioLogado();
 
-        //Criar método em usuario, debitar e creditar
+        anunciante.creditar(anuncio.getPreco());
+        usuarioLogado.debitar(anuncio.getPreco());
 
-        usuarioLogado.setSaldo(usuarioLogado.getSaldo() - anuncio.getPreco());
-        usuarioLogado.setGasto(usuarioLogado.getGasto() + anuncio.getPreco());
-
-        anunciante.setSaldo(anuncio.getPreco() + anunciante.getSaldo());
+        anunciante.addNotificacao("Seu produto: " + anuncio.getTitulo() + " foi vendido para " + usuarioLogado.getNome());
 
         anuncioService.delete(id);
         usuarioService.update(anunciante);
         usuarioService.update(usuarioLogado);
 
-        return new ModelAndView("redirect:/company/listar_anuncios");
+        return new ModelAndView("redirect:/company/listar/anuncios");
+
+    }
+
+    @RequestMapping(value = "company/listar/apagar/anuncio",method = RequestMethod.POST)
+    public ModelAndView apagarAnuncio(@RequestParam(value = "ANUNCIO_ID") long id,RedirectAttributes attributes){
+        ModelAndView model = new ModelAndView();
+
+        anuncioService.delete(id);
+
+        return new ModelAndView("redirect:/company/listar/anuncios");
+
 
     }
 

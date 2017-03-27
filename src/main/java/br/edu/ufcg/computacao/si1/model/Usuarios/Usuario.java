@@ -3,6 +3,7 @@ package br.edu.ufcg.computacao.si1.model.Usuarios;
 import org.springframework.security.core.authority.AuthorityUtils;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 
 @Entity(name = "Usuario")
 @Table(name = "tb_usuario")
@@ -32,6 +33,10 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
     @Column
     private Double gasto;
 
+    @Column
+    private ArrayList<String> notificacoes;
+
+
    /* @OneToMany
     private List<Anuncio> anuncios; cada usuario vai ter uma lista dos seus anuncios
     */
@@ -49,6 +54,7 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
         this.role = role;
         this.saldo = saldo;
         this.gasto = gasto;
+        this.notificacoes = new ArrayList<String>();
     }
 
 
@@ -106,5 +112,29 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
 
     public void setGasto(double gasto) {
         this.gasto = gasto;
+    }
+
+    public ArrayList<String> getNotificacoes() {
+        return notificacoes;
+    }
+
+    public void addNotificacao(String notificacao){
+        this.notificacoes.add(notificacao);
+    }
+
+    public void creditar(Double preco){
+        this.saldo += preco;
+    }
+
+    public void debitar(Double preco){
+        Double novoSaldo = this.getSaldo() - preco;
+
+        setGasto(this.gasto + preco);
+
+        if (novoSaldo < 0.0){
+            this.saldo = 0.0;
+        }else{
+            this.saldo = novoSaldo;
+        }
     }
 }

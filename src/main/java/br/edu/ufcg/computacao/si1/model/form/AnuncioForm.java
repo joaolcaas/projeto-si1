@@ -66,9 +66,5 @@ public class AnuncioForm {
         return tiposUser;
     }
 
-    /*public String[] getTiposUser(){
-        String[] tipos = new String[] {"movel", "imovel"};
-        return tipos;
-    }*/
 }
 
