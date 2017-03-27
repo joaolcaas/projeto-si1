@@ -76,7 +76,7 @@
                         <td align="center" th:text="${'R$ ' + #numbers.formatDecimal(item.preco, 0, 'COMMA', 2, 'POINT')}">0.00</td>
                         <td>
                             <div th:if="${usuarioUser.id} != ${item.criador.id}">
-                                <div th:if="${item.tipo} == movel or ${item.tipo} == imovel or${item.tipo} == servico">
+                                <div th:if="${item.tipo} == movel or ${item.tipo} == imovel or ${item.tipo} == servico">
                                     <form  th:action="@{comprar/anuncio}" method="post">
                                     <input type="hidden" th:value="${item._id}" name="ANUNCIO_ID"/>
                                     <button  class="btn btn-success"> Comprar</button>
