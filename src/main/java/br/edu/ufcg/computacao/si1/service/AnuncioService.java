@@ -1,6 +1,6 @@
 package br.edu.ufcg.computacao.si1.service;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -21,5 +21,8 @@ public interface AnuncioService {
     boolean update(Anuncio anuncio);
 
     boolean delete(Long id);
+
+    Collection<Anuncio> getByIdCriador(Long id);
+
 
 }

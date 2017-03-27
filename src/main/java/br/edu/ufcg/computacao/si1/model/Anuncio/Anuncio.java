@@ -1,4 +1,11 @@
-package br.edu.ufcg.computacao.si1.model;
+package br.edu.ufcg.computacao.si1.model.Anuncio;
+
+import br.edu.ufcg.computacao.si1.model.Notas;
+import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaFisica;
+import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaJuridica;
+import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.Usuarios.UsuarioNull;
+import com.sun.istack.internal.Nullable;
 
 import javax.persistence.*;
 import java.text.DateFormat;
@@ -10,16 +17,16 @@ import java.util.Date;
  */
 @Entity
 @Table(name="tb_anuncio")
-public class Anuncio {
+public abstract class Anuncio {
 
-    private static final String[] tipos = new String[] {"movel", "imovel", "emprego"};
+    private static final String[] tipos = new String[] {"movel", "imovel", "emprego","servico"};
 
 
     private final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name = "_id", nullable = false, unique = true)
+    @Column(name = "ANUNCIO_ID")
     private Long _id;
 
     @Column(name = "titulo", nullable = false)
@@ -29,28 +36,39 @@ public class Anuncio {
     private Date dataDeCriacao;
 
     @Column(name = "preco", nullable = false)
-    private double preco;
+    private Double preco;
 
-    @Column(name = "nota")
+    @Column(name = "nota",nullable = false)
     private String nota;
 
     @Column(name = "tipo", nullable = false)
     private String tipo;
 
-    public Anuncio(String titulo, Date dataDeCriacao, double preco, String nota, String tipo) {
+    @Column(name = "comentarios")
+    private String[] comentarios;
+
+    @ManyToOne
+    private Usuario criador;
+
+
+    public Anuncio(String titulo, Date dataDeCriacao, Double preco, String nota, String tipo, Usuario criador) {
         this.titulo = titulo;
         this.dataDeCriacao = dataDeCriacao;
         this.preco = preco;
-        this.nota = nota;
+        this.nota = "NOSTAR";
         this.tipo = tipo;
+        this.comentarios = new String[] {""};
+        this.criador = criador;
     }
 
     public Anuncio() {
         titulo = "";
         dataDeCriacao = new Date();
-        preco = 0;
-        nota = "";
+        preco = 0.0;
+        nota = "NOSTAR";
         tipo = "";
+        comentarios = new String[] {""};
+        criador = new UsuarioNull();
     }
 
     /**
@@ -106,6 +124,18 @@ public class Anuncio {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public String[] getComentarios() {
+        return comentarios;
+    }
+
+    public Usuario getCriador() {
+        return criador;
+    }
+
+    public void setCriador(Usuario criador) {
+        this.criador = criador;
     }
 
     @Override

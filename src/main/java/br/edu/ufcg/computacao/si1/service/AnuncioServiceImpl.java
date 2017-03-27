@@ -1,9 +1,10 @@
 package br.edu.ufcg.computacao.si1.service;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
 import br.edu.ufcg.computacao.si1.repository.AnuncioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -36,7 +37,7 @@ public class AnuncioServiceImpl implements AnuncioService {
     }
 
     @Override
-    public Optional<Anuncio> getById(Long id) {
+    public Optional<Anuncio> getById(Long id){
         /*aqui recuperamos o anuncio pelo seu id*/
         return Optional.ofNullable(anuncioRepository.findOne(id));
     }
@@ -48,6 +49,12 @@ public class AnuncioServiceImpl implements AnuncioService {
         * filtrando o tipo, pelo equals, retornando um arrayLista*/
         return anuncioRepository.findAll().stream()
                 .filter(anuncio -> anuncio.getTipo().equals(tipo))
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
+
+    @Override
+    public Collection<Anuncio> getByIdCriador(Long id) {
+        return anuncioRepository.findAll().stream().filter(anuncio -> anuncio.getCriador().getId().equals(id))
                 .collect(Collectors.toCollection(ArrayList::new));
     }
 
@@ -72,11 +79,11 @@ public class AnuncioServiceImpl implements AnuncioService {
     public boolean delete(Long id) {
         /*aqui se apaga o anuncio se ele existir*/
 
-
         if (anuncioRepository.exists(id)) {
             anuncioRepository.delete(id);
             return true;
         }
         return false;
     }
+
 }

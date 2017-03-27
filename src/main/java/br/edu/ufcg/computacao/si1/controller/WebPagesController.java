@@ -1,12 +1,20 @@
 package br.edu.ufcg.computacao.si1.controller;
 
+import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.service.AnuncioService;
+import br.edu.ufcg.computacao.si1.service.UsuarioService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class WebPagesController {
+
+    @Autowired
+    private UsuarioService usuarioService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView getPageIndex(){
@@ -27,6 +35,10 @@ public class WebPagesController {
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public ModelAndView getPageIndexUser(){
         ModelAndView model = new ModelAndView();
+
+        model.addObject("notificacoes",usuarioService.getUsuarioLogado().getNotificacoes());
+
+        model.addObject("usuarioLogado",usuarioService.getUsuarioLogado());
         model.setViewName("user/index");
 
         return model;
@@ -35,6 +47,8 @@ public class WebPagesController {
     @RequestMapping(value = "/company", method = RequestMethod.GET)
     public ModelAndView getPageIndexCompany(){
         ModelAndView model = new ModelAndView();
+        model.addObject("notificacoes",usuarioService.getUsuarioLogado().getNotificacoes());
+        model.addObject("usuarioLogado",usuarioService.getUsuarioLogado());
         model.setViewName("company/index");
 
         return model;

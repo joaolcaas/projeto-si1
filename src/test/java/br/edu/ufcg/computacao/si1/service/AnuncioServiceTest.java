@@ -1,8 +1,12 @@
 package br.edu.ufcg.computacao.si1.service;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Emprego;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Imovel;
+import br.edu.ufcg.computacao.si1.model.Anuncio.Movel;
 import br.edu.ufcg.computacao.si1.model.Notas;
 import br.edu.ufcg.computacao.si1.repository.AnuncioRepository;
+import br.edu.ufcg.computacao.si1.repository.UsuarioRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +14,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.util.Date;
 
 import static junit.framework.TestCase.*;
@@ -30,12 +33,14 @@ public class AnuncioServiceTest {
 
     private Anuncio anuncio1, anuncio2, anuncio3;
 
+    private UsuarioService usuarioService;
+
 
     @Before
     public void setUp() {
-        anuncio1 = new Anuncio("Anuncio de Movel", new Date(), 100, Notas.notas[2], "movel");
-        anuncio2 = new Anuncio("Anuncio de Imovel", new Date(), 100000, Notas.notas[3], "imovel");
-        anuncio3 = new Anuncio("Anuncio de Emprego", new Date(), 0, Notas.notas[1], "emprego");
+        anuncio1 = new Movel("Anuncio de Movel", new Date(), 100.0, Notas.notas[2], "movel", usuarioService.getUsuarioLogado());
+        anuncio2 = new Imovel("Anuncio de Imovel", new Date(), 100000.0, Notas.notas[3], "imovel", usuarioService.getUsuarioLogado());
+        anuncio3 = new Emprego("Anuncio de Emprego", new Date(), 0.0, Notas.notas[1], "emprego", usuarioService.getUsuarioLogado());
     }
 
     @After
@@ -78,25 +83,25 @@ public class AnuncioServiceTest {
 
         int QTDE_ANUNCIOS_ESPERADA = 1;
 
-        Anuncio anuncioMovel = anuncioService.create(anuncio1);
-        Anuncio anuncioImovel = anuncioService.create(anuncio2);
-        Anuncio anuncioEmprego = anuncioService.create(anuncio3);
+        Anuncio Movel = anuncioService.create(anuncio1);
+        Anuncio Imovel = anuncioService.create(anuncio2);
+        Anuncio Emprego = anuncioService.create(anuncio3);
 
-        assertNotNull(anuncioMovel);
-        assertNotNull(anuncioImovel);
-        assertNotNull(anuncioEmprego);
+        assertNotNull(Movel);
+        assertNotNull(Imovel);
+        assertNotNull(Emprego);
 
-        assertEquals(anuncioMovel.getTipo(), "movel");
-        assertEquals(anuncioImovel.getTipo(), "imovel");
-        assertEquals(anuncioEmprego.getTipo(), "emprego");
+        assertEquals(Movel.getTipo(), "movel");
+        assertEquals(Imovel.getTipo(), "imovel");
+        assertEquals(Emprego.getTipo(), "emprego");
 
         assertEquals(QTDE_ANUNCIOS_ESPERADA, anuncioService.get("movel").size());
         assertEquals(QTDE_ANUNCIOS_ESPERADA, anuncioService.get("imovel").size());
         assertEquals(QTDE_ANUNCIOS_ESPERADA, anuncioService.get("emprego").size());
 
-        assertTrue(anuncioService.get("movel").contains(anuncioMovel));
-        assertTrue(anuncioService.get("imovel").contains(anuncioImovel));
-        assertTrue(anuncioService.get("emprego").contains(anuncioEmprego));
+        assertTrue(anuncioService.get("movel").contains(Movel));
+        assertTrue(anuncioService.get("imovel").contains(Imovel));
+        assertTrue(anuncioService.get("emprego").contains(Emprego));
     }
 
     @Test
