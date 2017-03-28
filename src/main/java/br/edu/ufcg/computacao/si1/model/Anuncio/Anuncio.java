@@ -5,7 +5,7 @@ import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaFisica;
 import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaJuridica;
 import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
 import br.edu.ufcg.computacao.si1.model.Usuarios.UsuarioNull;
-import com.sun.istack.internal.Nullable;
+//import com.sun.istack.internal.Nullable;
 
 import javax.persistence.*;
 import java.text.DateFormat;
