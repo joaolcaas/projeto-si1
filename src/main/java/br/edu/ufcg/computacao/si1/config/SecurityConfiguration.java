@@ -1,6 +1,6 @@
 package br.edu.ufcg.computacao.si1.config;
 
-import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.usuarios.Usuario;
 import br.edu.ufcg.computacao.si1.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;

@@ -1,4 +1,4 @@
-package br.edu.ufcg.computacao.si1.model.Usuarios;
+package br.edu.ufcg.computacao.si1.model.usuarios;
 
 import javax.persistence.Entity;
 

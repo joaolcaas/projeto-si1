@@ -1,8 +1,8 @@
-package br.edu.ufcg.computacao.si1.model.Anuncio;
+package br.edu.ufcg.computacao.si1.model.anuncio;
 
 
 
-import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.usuarios.Usuario;
 
 import javax.persistence.Entity;
 import java.util.Date;

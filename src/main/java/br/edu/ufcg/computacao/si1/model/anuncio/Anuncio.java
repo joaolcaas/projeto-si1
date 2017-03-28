@@ -1,10 +1,7 @@
-package br.edu.ufcg.computacao.si1.model.Anuncio;
+package br.edu.ufcg.computacao.si1.model.anuncio;
 
-import br.edu.ufcg.computacao.si1.model.Notas;
-import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaFisica;
-import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaJuridica;
-import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
-import br.edu.ufcg.computacao.si1.model.Usuarios.UsuarioNull;
+import br.edu.ufcg.computacao.si1.model.usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.usuarios.UsuarioNull;
 //import com.sun.istack.internal.Nullable;
 
 import javax.persistence.*;
@@ -170,7 +167,7 @@ public abstract class Anuncio {
 
     @Override
     public String toString() {
-        return "Anuncio{" +
+        return "anuncio{" +
                 "_id=" + _id +
                 ", titulo='" + titulo + '\'' +
                 ", dataDeCriacao=" + getDataDeCriacao() +

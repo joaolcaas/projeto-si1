@@ -1,9 +1,9 @@
 package br.edu.ufcg.computacao.si1.controller;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
-import br.edu.ufcg.computacao.si1.model.Anuncio.AnuncioFactory;
+import br.edu.ufcg.computacao.si1.model.anuncio.Anuncio;
+import br.edu.ufcg.computacao.si1.model.anuncio.AnuncioFactory;
 import br.edu.ufcg.computacao.si1.model.Notas;
-import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.usuarios.Usuario;
 import br.edu.ufcg.computacao.si1.model.form.AnuncioForm;
 import br.edu.ufcg.computacao.si1.repository.AnuncioRepository;
 import br.edu.ufcg.computacao.si1.service.AnuncioServiceImpl;

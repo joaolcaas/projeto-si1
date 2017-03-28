@@ -1,4 +1,4 @@
-package br.edu.ufcg.computacao.si1.model.Usuarios;
+package br.edu.ufcg.computacao.si1.model.usuarios;
 
 import br.edu.ufcg.computacao.si1.model.form.UsuarioForm;
 import org.springframework.stereotype.Component;

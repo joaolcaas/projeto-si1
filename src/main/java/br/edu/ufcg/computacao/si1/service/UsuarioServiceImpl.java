@@ -1,10 +1,8 @@
 package br.edu.ufcg.computacao.si1.service;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
-import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaFisica;
-import br.edu.ufcg.computacao.si1.model.Usuarios.PessoaJuridica;
-import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
-import br.edu.ufcg.computacao.si1.model.Usuarios.UsuarioFactory;
+import br.edu.ufcg.computacao.si1.model.anuncio.Anuncio;
+import br.edu.ufcg.computacao.si1.model.usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.usuarios.UsuarioFactory;
 import br.edu.ufcg.computacao.si1.model.form.UsuarioForm;
 import br.edu.ufcg.computacao.si1.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;

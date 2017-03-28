@@ -1,10 +1,8 @@
-package br.edu.ufcg.computacao.si1.model.Anuncio;
+package br.edu.ufcg.computacao.si1.model.anuncio;
 
-import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.usuarios.Usuario;
 import br.edu.ufcg.computacao.si1.model.form.AnuncioForm;
 import org.springframework.stereotype.Component;
-
-import java.util.Date;
 
 /**
  * Created by João Lucas on 13/03/2017.

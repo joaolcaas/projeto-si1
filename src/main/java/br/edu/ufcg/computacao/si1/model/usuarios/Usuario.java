@@ -1,4 +1,4 @@
-package br.edu.ufcg.computacao.si1.model.Usuarios;
+package br.edu.ufcg.computacao.si1.model.usuarios;
 
 import org.springframework.security.core.authority.AuthorityUtils;
 
@@ -38,7 +38,7 @@ public abstract class Usuario extends org.springframework.security.core.userdeta
 
 
    /* @OneToMany
-    private List<Anuncio> anuncios; cada usuario vai ter uma lista dos seus anuncios
+    private List<anuncio> anuncios; cada usuario vai ter uma lista dos seus anuncios
     */
     public Usuario() {
         super("default", "default", AuthorityUtils.createAuthorityList("USER"));

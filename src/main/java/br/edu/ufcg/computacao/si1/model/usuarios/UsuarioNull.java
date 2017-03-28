@@ -1,4 +1,4 @@
-package br.edu.ufcg.computacao.si1.model.Usuarios;
+package br.edu.ufcg.computacao.si1.model.usuarios;
 
 /**
  * Created by João Lucas on 24/03/2017.

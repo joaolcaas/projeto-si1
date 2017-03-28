@@ -1,12 +1,11 @@
 package br.edu.ufcg.computacao.si1.service;
 
-import br.edu.ufcg.computacao.si1.model.Anuncio.Anuncio;
-import br.edu.ufcg.computacao.si1.model.Anuncio.Emprego;
-import br.edu.ufcg.computacao.si1.model.Anuncio.Imovel;
-import br.edu.ufcg.computacao.si1.model.Anuncio.Movel;
+import br.edu.ufcg.computacao.si1.model.anuncio.Anuncio;
+import br.edu.ufcg.computacao.si1.model.anuncio.Emprego;
+import br.edu.ufcg.computacao.si1.model.anuncio.Imovel;
+import br.edu.ufcg.computacao.si1.model.anuncio.Movel;
 import br.edu.ufcg.computacao.si1.model.Notas;
 import br.edu.ufcg.computacao.si1.repository.AnuncioRepository;
-import br.edu.ufcg.computacao.si1.repository.UsuarioRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -38,9 +37,9 @@ public class AnuncioServiceTest {
 
     @Before
     public void setUp() {
-        anuncio1 = new Movel("Anuncio de Movel", new Date(), 100.0, Notas.notas[2], "movel", usuarioService.getUsuarioLogado());
-        anuncio2 = new Imovel("Anuncio de Imovel", new Date(), 100000.0, Notas.notas[3], "imovel", usuarioService.getUsuarioLogado());
-        anuncio3 = new Emprego("Anuncio de Emprego", new Date(), 0.0, Notas.notas[1], "emprego", usuarioService.getUsuarioLogado());
+        anuncio1 = new Movel("anuncio de Movel", new Date(), 100.0, Notas.notas[2], "movel", usuarioService.getUsuarioLogado());
+        anuncio2 = new Imovel("anuncio de Imovel", new Date(), 100000.0, Notas.notas[3], "imovel", usuarioService.getUsuarioLogado());
+        anuncio3 = new Emprego("anuncio de Emprego", new Date(), 0.0, Notas.notas[1], "emprego", usuarioService.getUsuarioLogado());
     }
 
     @After

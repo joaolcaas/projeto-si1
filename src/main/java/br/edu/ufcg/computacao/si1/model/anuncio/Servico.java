@@ -1,6 +1,6 @@
-package br.edu.ufcg.computacao.si1.model.Anuncio;
+package br.edu.ufcg.computacao.si1.model.anuncio;
 
-import br.edu.ufcg.computacao.si1.model.Usuarios.Usuario;
+import br.edu.ufcg.computacao.si1.model.usuarios.Usuario;
 //import com.sun.xml.internal.bind.v2.TODO;
 import javax.persistence.Entity;
 import java.util.Calendar;
